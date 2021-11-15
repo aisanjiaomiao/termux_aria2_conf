@@ -6,22 +6,34 @@
 
 ## 使用说明
 
-首选安装aira2
+### 首选安装aira2
 
 ```
 pkg install aria2
 ```
 
-将`.aria2c`与`start_aria2.sh`复制到：
+### 将`.aria2c`与`start_aria2.sh`复制到：
 
 ```
 /data/data/com.termux/files/home/
 ```
 
-修改 `.aria2c/aria2.conf` 下载的路径，例如：
+### 修改 `.aria2c/aria2.conf` 下载的路径，例如：
 
 ```
 dir=/data/data/com.termux/files/home/downloads
 ```
 
+### 启动aria
+
+```
+> chmod 777 start_aria2.sh
+> ./start_aria2.sh
+```
+
+或手动执行
+
+```
+aria2c --conf-path=/data/data/com.termux/files/home/.aria2c/aria2.conf -D
+```
 
