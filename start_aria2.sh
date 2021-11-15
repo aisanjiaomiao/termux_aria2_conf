@@ -1,0 +1,1 @@
+aria2c --conf-path=/data/data/com.termux/files/home/.aria2c/aria2.conf -D
